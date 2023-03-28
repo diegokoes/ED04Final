@@ -9,31 +9,40 @@ public class EntornosED4 {
     public static void main(String[] args) {
         Cuestionario c = new Cuestionario();
         c.agregarPregunta(new Pregunta("¿Cuál de estos juegos es un MMO?", List.of(
-                new Respuesta("Diablo 4", false),
+                new Respuesta("The Binding of Isaac", false),
                 new Respuesta("Super Meat Boy", false),
                 new Respuesta("Final Fantasy XIV", true),
                 new Respuesta("Hatoful Boyfriend", false)
         )));
-        c.agregarPregunta(new Pregunta("¿?", List.of(
-                new Respuesta("", false),
-                new Respuesta("", true),
-                new Respuesta(" ", false)
+        c.agregarPregunta(new Pregunta("a", List.of(
+                new Respuesta("a", false),
+                new Respuesta("aa", true),
+                new Respuesta("aaa", false)
         )));
         c.agregarPregunta(new Pregunta("¿?", List.of(
                 new Respuesta("Sí", false),
                 new Respuesta("No", true)
         )));
 
-        c.agregarPregunta(new Pregunta("Lenguajes de programación (¡Miren! alguien dijo el chiste de que HTML no es un lenguaje de programación, ríanse) que sirven para programar en la web del lado del cliente", List.of(
-                new Respuesta("HTML, CSS y JavaScript", true),
-                new Respuesta("PHP, Python y JavaScript", false),
-                new Respuesta("C y C++", false),
-                new Respuesta("Perl y Kotlin", false),
-                new Respuesta("Go, JavaScript y TypeScript", false)
+        c.agregarPregunta(new Pregunta("owo?", List.of(
+                new Respuesta("owo", true),
+                new Respuesta("owoo", false),
+                new Respuesta("owooo", false),
+                new Respuesta("owoooo", false),
+                new Respuesta("owoooooo", false)
+        )));
+  
+        c.agregarPregunta(new Pregunta("boop?", List.of(
+                new Respuesta("bop", true),
+                new Respuesta("boop", false),
+                new Respuesta("booop", false),
+                new Respuesta("boooop", false),
+                new Respuesta("booooop", false)
         )));
 
         c.preguntar();
         c.imprimirResultados();
+        c.calcularNota(0, 0);
     }
 
 }
@@ -130,3 +139,4 @@ class Cuestionario {
         System.out.printf("Total de preguntas: %d\nAciertos: %d (%.2f %%)\nErrores: %d (%.2f %%)", total, this.aciertos, porcentajeAciertos, this.errores, porcentajeErrores);
     }
 }
+  
