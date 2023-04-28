@@ -1,0 +1,7 @@
+InputStream (abstract) padre, punto de partida. ->FileInputStream (read buffer) || BufferInputStream || DataInputStream
+Bytes
+
+OutputStream (abstract) -> FileOutputStream (write)  buffer || BufferOutputStream  || DataOutputStream 
+
+
+
